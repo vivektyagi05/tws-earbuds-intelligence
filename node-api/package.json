@@ -1,0 +1,8 @@
+{
+  "name": "tws-earbuds-api",
+  "version": "0.1.0",
+  "description": "Mobile-facing API for the TWS earbud prototypes (serves SIMULATED snapshot data)",
+  "main": "src/server.js",
+  "scripts": { "start": "node src/server.js", "test": "node src/smoke-test.js" },
+  "dependencies": { "express": "^4.19.2" }
+}

@@ -1,0 +1,101 @@
+{
+  "context": {
+    "scenario": "mixed",
+    "noise_profile": {
+      "noise_level_db": -24.46973419189453,
+      "low_freq_ratio": 0.5026973485946655,
+      "flatness": 0.008158246986567974,
+      "speech_activity": 0.3166833166833167,
+      "label": "coloured / mixed"
+    },
+    "algorithmic_latency_ms": 32.0,
+    "metrics": {
+      "input_snr_db": 0.9,
+      "output_snr_db": 6.51,
+      "snr_improvement_db": 5.61,
+      "noise_attenuation_db": 6.99,
+      "speech_attenuation_db": 1.37,
+      "si_sdr_in_db": 0.91,
+      "si_sdr_out_db": 5.39
+    }
+  },
+  "recovery": {
+    "status": {
+      "left": {
+        "connection": "CONNECTED",
+        "batteryPct": 60
+      },
+      "right": {
+        "connection": "DISCONNECTED",
+        "batteryPct": 34
+      },
+      "case": {
+        "connection": "CONNECTED",
+        "batteryPct": 80
+      }
+    },
+    "recovery": {
+      "state": "SEARCHING",
+      "device": "RIGHT_BUD",
+      "proximity": "STRONG",
+      "liveTracking": true,
+      "guidance": [
+        "You are getting closer to the right bud.",
+        "Signal strong: it is likely within a few metres.",
+        "Last confirmed connection: Bedroom, 10:48 PM.",
+        "Last reported battery: 34% (as of 10:48 PM)."
+      ]
+    },
+    "recoveryDeadBattery": {
+      "state": "LIVE_UNAVAILABLE",
+      "liveTracking": false,
+      "guidance": [
+        "Live proximity unavailable.",
+        "Last confirmed connection: Bedroom, 10:48 PM.",
+        "Last reported battery: 34% (as of 10:48 PM).",
+        "The earbud is not transmitting. Search where you last used it; live guidance resumes if it is charged or placed in its case."
+      ]
+    }
+  },
+  "exposure": {
+    "doseLeftPct": 62.9,
+    "doseRightPct": 70.9,
+    "state": "ELEVATED",
+    "recommendation": "Consider lowering volume.",
+    "totalListeningMinutes": 195.0,
+    "disclaimer": "Estimated listening exposure for wellness feedback. Not a medical device or diagnosis."
+  },
+  "battery": {
+    "left": {
+      "health": 91,
+      "estimatedRuntimeHours": 4.7,
+      "fullChargeRuntimeHours": 4.9,
+      "confidence": "high",
+      "trendPointsPer100Cycles": -2.35
+    },
+    "right": {
+      "health": 78,
+      "estimatedRuntimeHours": 2.2,
+      "fullChargeRuntimeHours": 3.6,
+      "confidence": "high",
+      "trendPointsPer100Cycles": -8.48
+    },
+    "warning": "Right earbud degradation is significantly higher (health gap 13 points).",
+    "estimateType": "prototype_soh_estimate",
+    "findings": [
+      {
+        "severity": "warning",
+        "message": "Right earbud degradation is significantly higher (health gap 13 points)."
+      },
+      {
+        "severity": "warning",
+        "message": "Right earbud is fading 3.6x faster (8.5 vs 2.4 points per 100 cycles)."
+      }
+    ]
+  },
+  "_meta": {
+    "simulated": true,
+    "generatedAt": "2026-10-01T11:23:57.131735+00:00",
+    "source": "python prototypes (offline, simulated data)"
+  }
+}

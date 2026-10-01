@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+# generated artefacts
+node-api/data/snapshot.json
+product1_speech_isolation/out*/
+*.wav
